@@ -147,3 +147,62 @@ main {
     transform: none;
   }
 }
+
+
+
+#player {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  background: rgba(0,0,0,.5);
+  text-align: center;
+  padding: 20px;
+  display: flex;
+}
+
+
+#player .musica {
+  width: 100%;
+}
+
+#player .musica h1 {
+  margin-bottom: 40px;
+}
+
+#player .botao-play {
+  width: 60px;
+  height: 60px;
+  color: #fff;
+  background: url(play.svg);
+  background-size: cover;
+  border: none;
+  margin-bottom: 20px;
+}
+
+#player .player-tempo {
+  width: 100%;
+  height: 5px;
+  border-radius: 1000px;
+  /* background: #777; */
+  display: flex;
+  align-items: center;
+}
+
+#player .player-tempo span {
+  padding: 10px;
+}
+
+#player .player-tempo .player-barra {
+  width: 50%;
+  height: inherit;
+  background: #777;
+  border-radius: 1000px;
+  flex-grow: 1;
+}
+
+#player .player-tempo .tocado {
+  content: '';
+  width: 0%;
+  height: inherit;
+  background: #fff;
+}
